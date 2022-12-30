@@ -16,6 +16,18 @@ a {
     text-decoration: none;
 }
 
+
+/* Свойства для корректного отображения картинок */
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+/* Свойства для обнуления курсива у address */
+address {
+	font-style: normal;
+}
+
 .vissualy-hidden {
     position: absolute;
     white-space: nowrap;
@@ -29,14 +41,28 @@ a {
     margin: -1px;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 .page {
     font-family: 'Roboto';
-background: var(--page-color);
+    background: var(--page-color);
 }
 
 /* logo */
 
 .logo-web {
+        margin-left: 215px;
+        margin-top: 0;
+        margin-bottom: 20px;
+
     font-family: 'Raleway';
     color: var(--blue-color);
     font-weight: 700;
@@ -56,7 +82,9 @@ background: var(--page-color);
 
 
 .logo-footer {
-    font-family: 'Raleway';
+         margin-top: 0;
+         margin-bottom: 20px;
+        font-family: 'Raleway';
         color:var(--section-backghround-color);
         font-weight: 700;
         font-size: 26px;
@@ -75,6 +103,40 @@ background: var(--page-color);
 .page-haeder .site-nav:focus
 {
     color: var(--blue-color);
+}
+
+
+.container {
+    text-align: center;
+    width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*Logo*/
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/*Nav*/
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+/* site-nav*/
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+    padding: 0;
+}
+
+/* site-nav item+item*/
+.site-nav .item+.item {
+    margin-left: 50px;
 }
 
  .site-nav .nav-list {
@@ -106,8 +168,21 @@ color: var(--primery-text-color);
         letter-spacing: 0.02em;
 
  }
+    /* Контакти */
+.list-contacts {
+    display: flex;
+  margin-left: auto;
+}
+
+
+.list-contacts .item + .item {
+    margin-left: 50px;
+
+} 
+
 
  .list-contacts .contacts-link {
+    
     font-family: 'Roboto';
     color: var(--blue-color);
 
@@ -119,6 +194,8 @@ color: var(--primery-text-color);
 
  }
  .list-contacts .contact-link {
+        margin-left: 50px;
+
         font-family: 'Roboto';
         color: var(--sekondary-text-color);
 
@@ -129,14 +206,22 @@ color: var(--primery-text-color);
 
  }
 
+
+
  /* Шапка */
 
- .container {
+ .container-item {
             color: var(--section-backghround-color);
     background: var(--footer-color);
  }
 
+/*Ефективні рішення для вашого бізнесу*/
+
 .hero-title {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36 ;
@@ -146,7 +231,18 @@ color: var(--primery-text-color);
 
 }
 
+/* кнопка */
 .order-button {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid transparent;
+        border-radius: 4px;
+        padding: 10px 32px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
         font-family: 'Roboto';
         color: var(--white-color);
         background: var(--blue-color);
@@ -156,18 +252,14 @@ color: var(--primery-text-color);
         letter-spacing: 0.06em;
 }
 
-.hero {
-
-    width: 1600px;
-    height: 600px;
-
-}
 
 /* Особливості */
 
+/* section */
 .section {
-    background: var(--page-color);
-font-family: 'Roboto';
+    padding: 94px 0;
+
+    font-family: 'Roboto';
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -175,6 +267,9 @@ font-family: 'Roboto';
 }
 
 .subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
+
     color: var(--sekondary-text-color);
         font-family: 'Roboto';
         font-size: 14px;
@@ -183,8 +278,17 @@ font-family: 'Roboto';
 }
 /* УВАГА ДО ДЕТАЛЕЙ */
 
+/*subject*/
+.subject {
+    display: flex;
+}
+
 .headline {
-font-family: 'Roboto';
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -192,7 +296,7 @@ font-family: 'Roboto';
 }
 
 .text {
-font-family: 'Roboto';
+    font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -251,8 +355,40 @@ font-family: 'Roboto';
 }
 
 /* Чим ми займаємося */
+
+/* зоображення*/
+
+.avatar {
+    margin-top: 0;
+    margin-bottom: 94px;
+}
+.pic {
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+.img {
+    margin-left: 30px;
+}
+.picture {
+    margin-left: 30px;
+}
+
+
+
 /* Наша команда */
+
+.subject > .item {
+    display: flex;
+}
+
+.section-leader {
+    margin-left: 30px;
+}
+
 .section-bg {
+margin-top: 0;
+margin-bottom: 50px;
+
 font-family: 'Roboto';
 color: var(--primery-text-color);
 font-weight: 700;
@@ -274,9 +410,11 @@ letter-spacing: 0.03em;
 /* підвал*/
 
 .addres {
+    margin-left: 215px;
+    margin-bottom: 9px;
 
-font-style: normal;
-color: var(--section-backghround-color);
+    font-style: normal;
+    color: var(--section-backghround-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -284,35 +422,42 @@ color: var(--section-backghround-color);
 }
 
 .mail {
+        margin-left: 215px;
+        margin-bottom: 9px;
 
-color: rgba(255, 255, 255, 0.6);
+        color: rgba(255, 255, 255, 0.6);
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
 }
 
 .number {
-    color: rgba(255, 255, 255, 0.6);
+        margin-left: 215px;
+
+         color: rgba(255, 255, 255, 0.6);
         font-weight: 400;
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
 }
-footer {
+.footer {
     background-color: var(--footer-color);
 }
 
 
 /* Портфоліо */
 
+/**/
+
 .body-page {
+
     font-family: 'Roboto';
     background: var(--page-color);
     color: var(--primery-text-color);
-
 }
 
 .list-clients {
+
     color: var(--blue-color);
         font-weight: 500;
         font-size: 14px;
@@ -325,7 +470,8 @@ footer {
 }
 
 .nav-studio {
-        color: #212121;
+
+        color: var(--primery-text-color);
             font-weight: 500;
             font-size: 14px;
             line-height: 1.14;
@@ -338,6 +484,7 @@ footer {
 
 
 .nav-list-client {
+
 color: var(--primery-text-color);
         font-weight: 500;
         font-size: 14px;
@@ -351,8 +498,29 @@ color: var(--primery-text-color);
 
 /* кнопки */
 
+
+
+
+.section-button {
+    display: flex;
+    margin-top: 94px;
+    justify-content: center;
+}
+
+/* Курсор */
+.nav-button .section-button :hover,
+.nav-button .section-button :focus {
+cursor: pointer;
+}
+
 .button {
+
+         border: 1px solid transparent;
+        border-radius: 4px;
+        padding: 6px 25px;  
+
         font-family: 'Roboto';
+        color: var(--section-backghround-color);
          background-color: var(--blue-color);
          font-weight: 500;
         font-size: 16px;
@@ -361,6 +529,11 @@ color: var(--primery-text-color);
 }
 
 .btn {
+        margin-left: 8px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        padding: 6px 22px;
+
          font-family: 'Roboto';
          color: var(--primery-text-color);
             background: var(--button-background-color);
@@ -372,6 +545,11 @@ color: var(--primery-text-color);
 }
 
 .control {
+            margin-left: 8px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            padding: 6px 22px;
+
             font-family: 'Roboto';
             color: var(--primery-text-color);
             background: var(--button-background-color);
@@ -383,6 +561,11 @@ color: var(--primery-text-color);
 }
 
 .dropdown {
+            margin-left: 8px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            padding: 6px 22px;
+
             font-family: 'Roboto';
             color: var(--primery-text-color);
             background: var(--button-background-color);
@@ -394,6 +577,11 @@ color: var(--primery-text-color);
 }
 
 .type-btn {
+            margin-left: 8px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            padding: 6px 22px;
+
         font-family: 'Roboto';
         color: var(--primery-text-color);
         background: var(--button-background-color);
@@ -404,8 +592,12 @@ color: var(--primery-text-color);
         top: 174px;
 }
 
+
+
+
 /* параграф */
 .aside {
+
      color: var(--sekondary-text-color);
         font-weight: 400;
         font-size: 16px;
@@ -417,9 +609,38 @@ color: var(--primery-text-color);
 /* Заголовок */
 
 .caption {
+
          font-family: 'Roboto';
         font-weight: 700;
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
 }
+
+/* Портфоліо */
+
+.userpic {
+
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.flex-elements {
+    width: 370;
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+}
+
+.flex-elements:nth-child(3n) {
+    margin-right: 0;
+}
+
+.flex-elements:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
+
