@@ -120,9 +120,14 @@ html {
 
 /* Header-container */
 .header-container {
+    margin-top: 32px;
+    margin-bottom: 32px;
+
     justify-content: center;
     display: flex;
     align-items: center;
+
+    border-bottom: 1px solid #ECECEC;
 }
 
 /*Nav*/
@@ -179,7 +184,9 @@ html {
 }
 
 .contacts-link {
+    padding-bottom: 60px;
     padding-left: 0;
+    margin: 0;
 }
 
  .list-contacts .contacts-link {
@@ -232,10 +239,12 @@ html {
 
 .hero-title {
        padding-top: 200px;
+       padding-bottom: 30px;
 
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 30px;
+        margin-top: 0;
+        margin-bottom: 0;
 
         font-weight: 900;
         font-size: 44px;
@@ -271,7 +280,6 @@ html {
 /* section */
 .section {
 
-         padding-bottom: 200px;
 
         font-family: 'Roboto';
         font-size: 14px;
@@ -295,6 +303,12 @@ html {
 /*subject*/
 .subject {
     display: flex;
+    justify-content: center;
+
+    padding-top: 50px;
+    padding-bottom: 94px;
+    padding-left: 0;
+    margin: 0; 
 }
 
 .other {
@@ -380,9 +394,10 @@ font-family: 'Roboto';
 
 
 .pic {
-    margin-top: 0;
-    padding-left: 0;
-    margin-bottom: 30px;
+    padding: 0;
+    margin-bottom: 94px;
+
+
 }
 .img {
     margin-left: 30px;
@@ -406,8 +421,8 @@ font-family: 'Roboto';
 
 .section-bg {
 
-margin-top: 0;
-margin-bottom: 50px;
+margin: 0;
+padding-bottom: 50px;
 
 font-family: 'Roboto';
 color: var(--primery-text-color);
@@ -433,14 +448,16 @@ letter-spacing: 0.03em;
 /* підвал*/
 
 .web-footer {
+    padding-top: 60px;
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 .addres {
+    padding-top: 20px;
     padding-left: 0;
-    margin-bottom: 9px;
+    padding-bottom: 9px;
 
     font-style: normal;
     color: var(--section-backghround-color);
@@ -452,7 +469,6 @@ letter-spacing: 0.03em;
 
 .mail {
         
-        margin-bottom: 9px;
 
         color: rgba(255, 255, 255, 0.6);
         font-size: 14px;
@@ -461,7 +477,7 @@ letter-spacing: 0.03em;
 }
 
 .number {
-        
+        padding-top: 9px;
 
          color: rgba(255, 255, 255, 0.6);
         font-weight: 400;
@@ -531,8 +547,12 @@ color: var(--primery-text-color);
 
 .section-button {
     display: flex;
-    margin-top: 94px;
     justify-content: center;
+
+    margin-top: 94px;
+    margin-bottom: 0;
+    padding-left: 0 ;
+    padding-bottom: 34px;
 }
 
 /* Курсор */
@@ -626,7 +646,9 @@ cursor: pointer;
 /* параграф */
 .aside {
 
-     color: var(--sekondary-text-color);
+        margin: 0;
+
+        color: var(--sekondary-text-color);
         font-weight: 400;
         font-size: 16px;
         line-height: 1.87;
@@ -637,6 +659,8 @@ cursor: pointer;
 /* Заголовок */
 
 .caption {
+
+        margin: 0 ;
 
          font-family: 'Roboto';
         font-weight: 700;
