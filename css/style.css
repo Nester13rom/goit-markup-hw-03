@@ -183,7 +183,7 @@ html {
 }
 
 .contacts-link {
-    padding-bottom: 60px;
+    
     padding-left: 0;
     margin: 0;
 }
@@ -450,16 +450,15 @@ font-family: 'Roboto';
 /* підвал*/
 
 .web-footer {
-    padding-top: 60px;
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 .addres {
-    padding-top: 20px;
+    margin-top: 20px;
     padding-left: 0;
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 
     font-style: normal;
     color: var(--section-backghround-color);
@@ -479,7 +478,8 @@ font-family: 'Roboto';
 }
 
 .number {
-        padding-top: 9px;
+        
+        margin-bottom: 9px;
 
          color: rgba(255, 255, 255, 0.6);
         font-weight: 400;
@@ -488,7 +488,11 @@ font-family: 'Roboto';
         letter-spacing: 0.03em;
 }
 .footer {
-    background-color: var(--footer-color);
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+
+        background-color: var(--footer-color);
 }
 
 
@@ -542,19 +546,22 @@ color: var(--primery-text-color);
         top: 32px;
 }
 
+/*section-btn*/
+.section-btn {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 /* кнопки */
-
-
-
 
 .section-button {
     display: flex;
     justify-content: center;
 
-    margin-top: 94px;
-    margin-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 50px;
     padding-left: 0 ;
-    padding-bottom: 34px;
+    
 }
 
 /* Курсор */
@@ -678,16 +685,16 @@ cursor: pointer;
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
-    gap: 24px;
+    gap: 30px;
 
 
 }
 
 .flex-elements {
-    flex-basis: calc((100% - 48px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
 
     background: var(--section-backghround-color);
-    border: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 
 }
 
