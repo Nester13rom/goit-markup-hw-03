@@ -54,7 +54,6 @@ html {
 
 .page {
     font-family: 'Roboto';
-    background: var(--page-color);
 }
 
 /* logo */
@@ -99,7 +98,7 @@ html {
 
 
 .page {
-    background-color: var(--page-color)
+    
 }
 
 .page-haeder .site-nav:hover,
@@ -120,8 +119,8 @@ html {
 
 /* Header-container */
 .header-container {
-    margin-top: 32px;
-    margin-bottom: 32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
     justify-content: center;
     display: flex;
@@ -218,7 +217,7 @@ html {
  /* Шапка */
 
  .container-item {
- 
+            padding-bottom: 200px;
 
             height: 600px;
             left: 0px;
@@ -232,19 +231,20 @@ html {
 /*Ефективні рішення для вашого бізнесу*/
 
 /* Герой */
-.hero {
+.hero-section {
+
     text-align: center;
 
 }
 
 .hero-title {
        padding-top: 200px;
-       padding-bottom: 30px;
+       
 
         margin-left: auto;
         margin-right: auto;
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: 30px;
 
         font-weight: 900;
         font-size: 44px;
@@ -280,6 +280,8 @@ html {
 /* section */
 .section {
 
+         padding-top: 94px;
+        padding-bottom: 94px;
 
         font-family: 'Roboto';
         font-size: 14px;
@@ -303,17 +305,17 @@ html {
 /*subject*/
 .subject {
     display: flex;
-    justify-content: center;
 
-    padding-top: 50px;
-    padding-bottom: 94px;
     padding-left: 0;
     margin: 0; 
 }
 
 .other {
         width: 270px;
-         gap: 30px;
+}
+
+.other:nth-last-child(-n+3) {
+    margin-left: 30px;
 }
 
 .headline {
@@ -421,16 +423,16 @@ font-family: 'Roboto';
 
 .section-bg {
 
-margin: 0;
-padding-bottom: 50px;
+    margin-top: 0;
+    margin-bottom: 50px;
 
-font-family: 'Roboto';
-color: var(--primery-text-color);
-font-weight: 700;
-font-size: 36px;
-line-height: 1.16;
-text-align: center;
-letter-spacing: 0.03em;
+    font-family: 'Roboto';
+    color: var(--primery-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
         
 }
 
