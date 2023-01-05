@@ -145,6 +145,9 @@ html {
     margin: 0;
 }
 
+.nav-studio {
+    padding: right 0;
+}
 
 .site-nav .nav-list {
     font-family: 'Roboto';
@@ -224,10 +227,16 @@ html {
 
 /* Шапка */
 
-.container-item {
+.container-item {}
+
+/*Ефективні рішення для вашого бізнесу*/
+
+/* Герой */
+.hero-section {
+    padding-top: 200px;
+    padding-bottom: 280px;
 
     text-align: center;
-    padding-bottom: 200px;
 
     height: 600px;
     left: 0px;
@@ -238,14 +247,7 @@ html {
     background: var(--footer-color);
 }
 
-/*Ефективні рішення для вашого бізнесу*/
-
-/* Герой */
-.hero-section {}
-
 .hero-title {
-    padding-top: 200px;
-
 
     margin-left: auto;
     margin-right: auto;
@@ -287,6 +289,7 @@ html {
 .section {
 
     padding-top: 94px;
+    padding-bottom: 94px;
 
     font-family: 'Roboto';
     font-size: 14px;
@@ -426,14 +429,20 @@ html {
 
 .section-leader {
     text-align: center;
-    margin-left: 30px;
 
-    padding-top: 186px;
-    padding-bottom: 94px;
+    margin-left: 30px;
 
 }
 
+.container-leader {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+
 .section-bg {
+
 
     margin-top: 0;
     margin-bottom: 50px;
@@ -449,10 +458,8 @@ html {
 }
 
 .section-title {
-
     margin-top: 0;
-    margin-bottom: 0;
-    padding: 30px 0 10px 0;
+    margin-bottom: 10px;
 
     font-family: 'Roboto';
     font-weight: 500;
